@@ -11,10 +11,10 @@ const Landing = () => {
     <div className="font-sans">
       <Navbar />
       <Hero />
+      <Services />
       <About />
       <Contact />
       <Footer />
-      <Services />
       <Testimonials />
       <Values />
     </div>
