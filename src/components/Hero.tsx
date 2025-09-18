@@ -1,41 +1,37 @@
 import VeriplotSvg from "../assets/WorkObjects";
-const Hero = () => {
+
+export default function Hero() {
   return (
-    <div>
-      <section
-        className="relative h-[500px] flex items-center justify-center text-center text-white px-4"
-        style={{
-          backgroundImage: "url('src/assets/Hero-background.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-black/50" />
+    <section
+      className="relative h-[627px] w-full bg-cover bg-center"
+      style={{ backgroundImage: "url('src/assets/Hero-background.jpg')" }}
+    >
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/60"></div>
 
-        {/* Content */}
-        <div className="relative z-10 max-w-md">
-          <h1 className="flex items-center flex-col gap-2 text-xl font-bold mb-2">
-            Unlock Wealth Through Real Estate with
-            <VeriplotSvg />
-          </h1>
-          <p className="text-sm font-normal mb-4 text-gray-200">
-            Join a growing community of realtors, agents, and marketers who are
-            transforming
-            <br /> their real estate careers with VeriPlot
-          </p>
-          <div className="flex gap-3 justify-center">
-            <button className="px-6 py-2  bg-gray-50 text-purple-600 rounded-lg font-semibold">
-              About us
-            </button>
-            <button className="px-6 py-2 bg-purple-600 rounded-lg font-semibold">
-              Join us
-            </button>
-          </div>
+      {/* Content */}
+      <div className="relative flex flex-col items-center justify-center text-center px-6 h-full">
+        {/* Heading with inline SVG */}
+        <h1 className="flex flex-col items-center justify-center gap-2 text-white font-poppins font-bold text-[18px] leading-tight max-w-[325px]">
+          Unlock wealth through real estate with
+          <VeriplotSvg />
+        </h1>
+
+        {/* Subtext */}
+        <p className="mt-3 text-gray-300 font-poppins text-[12px] max-w-[325px] leading-snug">
+          Join a growing community of realtors, agents, and marketers who are
+          transforming their real estate careers with VeriPlot.
+        </p>
+        {/* Buttons */}
+        <div className="flex gap-3 mt-6">
+          <button className="w-[105px] h-[44px] bg-purple-600 text-white rounded-md text-sm">
+            About us
+          </button>
+          <button className="w-[105px] h-[44px] bg-white text-purple-600 rounded-md text-sm border border-purple-600">
+            Get started
+          </button>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
-};
-
-export default Hero;
+}
