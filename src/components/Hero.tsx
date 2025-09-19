@@ -22,13 +22,26 @@ export default function Hero() {
           Join a growing community of realtors, agents, and marketers who are
           transforming their real estate careers with VeriPlot.
         </p>
-        {/* Buttons */}
-        <div className="flex gap-3 mt-6">
-          <button className="w-[105px] h-[44px] bg-purple-600 text-white rounded-md text-sm">
+
+        {/* Buttons container */}
+        <div className="flex items-center gap-3 mt-5">
+          {/* Secondary Button */}
+          <button
+            className="flex justify-center items-center px-4 py-2 
+             rounded-lg 
+             bg-[#F0E6F7] border border-[#F0E6F7] 
+             shadow-sm font-inter font-semibold text-[16px] leading-6 text-[#6500AC]"
+          >
             About us
           </button>
-          <button className="w-[105px] h-[44px] bg-white text-purple-600 rounded-md text-sm border border-purple-600">
-            Get started
+
+          {/* Primary Button */}
+          <button
+            className="flex justify-center items-center px-4 py-2 rounded-lg 
+             bg-[#6500AC] border border-[#6500AC] 
+             shadow-sm font-inter font-semibold text-[16px] leading-6 text-white"
+          >
+            Join us
           </button>
         </div>
       </div>
