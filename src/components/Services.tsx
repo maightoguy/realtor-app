@@ -1,52 +1,62 @@
 export default function Services() {
-  const services = [
-    {
-      title: "Free Thinking Resources",
-      desc: "Get access to a wide range of tools and resources that help you explore ideas freely.",
-    },
-    {
-      title: "Zero Capital Required",
-      desc: "Start your journey without any initial investment required.",
-    },
-    {
-      title: "Transparent Funding Access",
-      desc: "Easily see how funds are managed with total transparency.",
-    },
-    {
-      title: "Free Thinking Resources",
-      desc: "Build your knowledge and skills with open and free resources.",
-    },
-    {
-      title: "Creative Incentives",
-      desc: "Participate in exciting incentive programs designed to support your growth.",
-    },
-  ];
-
   return (
-    <section id="services" className="px-4 py-12 bg-white">
+    <section className="relative bg-[#FAFAFA] py-12 flex flex-col items-center">
       {/* Heading */}
-      <div className="text-center mb-8">
-        <h2 className="text-2xl font-bold text-gray-900">
-          What you stand to gain
+      <div className="flex flex-col items-center gap-2 w-[315px] text-center">
+        <h2 className="font-poppins font-bold text-[16px] leading-[24px] text-black">
+          What you stand to Gain
         </h2>
-        <p className="mt-2 text-gray-600 text-sm">
-          Explore the many benefits available to you when you join Veriplot.
+        <p className="font-poppins text-[12px] leading-[18px] text-gray-500">
+          Join a growing community of realtors, agents, and marketers who are
+          transforming their real estate careers with VeriPlot.
         </p>
       </div>
 
-      {/* Services List */}
-      <div className="space-y-4">
-        {services.map((service, idx) => (
-          <div
-            key={idx}
-            className="p-4 rounded-lg border border-gray-200 shadow-sm flex items-start gap-3"
-          >
-            <div>
-              <h3 className="font-semibold text-gray-800">{service.title}</h3>
-              <p className="text-sm text-gray-600">{service.desc}</p>
-            </div>
-          </div>
-        ))}
+      {/* Cards */}
+      <div className="mt-12 flex flex-col gap-5 w-[328px]">
+        {/* Card 1 */}
+        <div className="bg-white border border-[#F0E6F7] rounded-[10px] p-[14px] flex flex-col gap-2">
+          <h3 className="font-poppins font-bold text-[14px] leading-[21px] text-center text-black">
+            Free Training & Resources
+          </h3>
+          <p className="font-poppins text-[12px] leading-[18px] text-center text-gray-500">
+            Gain access to exclusive real estate insights, digital marketing
+            guides, and specialized training to scale your earnings.
+          </p>
+        </div>
+
+        {/* Card 2 */}
+        <div className="bg-white border border-[#F0E6F7] rounded-[10px] p-[14px] flex flex-col gap-2">
+          <h3 className="font-poppins font-bold text-[14px] leading-[21px] text-center text-black">
+            Zero Capital Required
+          </h3>
+          <p className="font-poppins text-[12px] leading-[18px] text-center text-gray-500">
+            Start your real estate journey without upfront investment. All you
+            need is your drive, and VeriPlot gives you the platform.
+          </p>
+        </div>
+
+        {/* Card 3 */}
+        <div className="bg-white border border-[#F0E6F7] rounded-[10px] p-[14px] flex flex-col gap-2">
+          <h3 className="font-poppins font-bold text-[14px] leading-[21px] text-center text-black">
+            Transparent Passive Income
+          </h3>
+          <p className="font-poppins text-[12px] leading-[18px] text-center text-gray-500">
+            Earn commissions seamlessly through our verified referral system —
+            track your rewards in real time, stress-free.
+          </p>
+        </div>
+
+        {/* Card 4 */}
+        <div className="bg-white border border-[#F0E6F7] rounded-[10px] p-[14px] flex flex-col gap-2">
+          <h3 className="font-poppins font-bold text-[14px] leading-[21px] text-center text-black">
+            Exclusive Incentives
+          </h3>
+          <p className="font-poppins text-[12px] leading-[18px] text-center text-gray-500">
+            Qualify for exciting rewards, from all-expense-paid trips to bonuses
+            that celebrate your success.
+          </p>
+        </div>
       </div>
     </section>
   );
