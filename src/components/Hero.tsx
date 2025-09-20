@@ -1,4 +1,4 @@
-import VeriplotSvg from "../assets/WorkObjects";
+import VeriplotSvg from "../modules/HeroWorkObjects";
 
 export default function Hero() {
   return (

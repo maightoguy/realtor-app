@@ -12,11 +12,11 @@ const Landing = () => {
       <Navbar />
       <Hero />
       <Services />
+      <Values />
       <About />
       <Contact />
-      <Footer />
       <Testimonials />
-      <Values />
+      <Footer />
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import BackgroundPattern from "./Background Pattern";
+import BackgroundPattern from "../modules/ServicesBackgroundPattern";
 export default function Services() {
   return (
     <section className="relative bg-[#FAFAFA] py-12 flex flex-col items-center">
