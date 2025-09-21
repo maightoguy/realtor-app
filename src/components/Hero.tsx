@@ -5,6 +5,7 @@ export default function Hero() {
     <section
       className="relative h-[627px] w-full bg-cover bg-center"
       style={{ backgroundImage: "url('src/assets/Hero-background.jpg')" }}
+      aria-hidden="true"
     >
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/60"></div>
