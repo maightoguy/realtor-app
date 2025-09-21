@@ -1,4 +1,8 @@
-const BackgroundPattern = () => {
+type BgPatternProps = {
+  className?: string;
+};
+
+const BackgroundPattern: React.FC<BgPatternProps> = ({ className }) => {
   return (
     <div>
       <svg
@@ -7,7 +11,7 @@ const BackgroundPattern = () => {
         viewBox="0 0 371 475"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="absolute inset-0 w-full h-full pointer-events-none"
+        className="absolute inset-0 w-full h-full pointer-events-none aria-hidden=true focusable=false"
       >
         <path
           d="M34.841 209.911C35.4125 210.684 36.8392 210.684 37.4107 209.911L44.3236 200.556C44.8951 199.783 44.1796 198.817 43.0387 198.817H29.2129C28.072 198.817 27.3565 199.783 27.9281 200.556L34.841 209.911Z"
@@ -61,12 +65,10 @@ const BackgroundPattern = () => {
         />
       </svg>
       <svg
-        width="320"
-        height="106"
         viewBox="0 0 375 106"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="absolute bottom-4 left-1/2 -translate-x-1/2"
+        className={className}
       >
         <g opacity="0.5">
           <g clip-path="url(#clip0_19409_2842)">

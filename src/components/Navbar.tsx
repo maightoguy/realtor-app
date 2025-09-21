@@ -1,11 +1,11 @@
 const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between px-4 py-3 bg-white shadow-md">
+    <nav className="flex items-center justify-between px-4 py-5 bg-white shadow-md">
       {/* Logo */}
       <div className="flex items-center gap-2">
         <img
-          src="src/assets/Veriplottxt.svg"
-          alt="Veriplot"
+          src="src/assets/Veriplot Primary logo 2.svg"
+          alt="Veriplot logo"
           className="h-6 w-auto"
         />
       </div>
@@ -15,7 +15,7 @@ const Navbar = () => {
         <img
           src="src/assets/Menu icon.svg" // place menu.svg in your /public folder
           alt="Menu"
-          className="h-6 w-6"
+          className="h-4 w-4"
         />
       </button>
 

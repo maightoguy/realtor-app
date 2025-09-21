@@ -1,8 +1,12 @@
 import BackgroundPattern from "../modules/ServicesBackgroundPattern";
+
 export default function Services() {
   return (
     <section className="relative bg-[#FAFAFA] py-12 flex flex-col items-center">
-      <BackgroundPattern />
+      <BackgroundPattern
+        aria-label="Veriplot Pattern"
+        className="w-full h-24 absolute -bottom-5 left-0"
+      />
       {/* Content Wrapper */}
       <div className="relative z-10 flex flex-col items-center">
         {/* Heading */}
@@ -17,7 +21,7 @@ export default function Services() {
         </div>
 
         {/* Cards */}
-        <div className="mt-12 mb-12 flex flex-col gap-5 w-[290px]">
+        <div className="mt-12 mb-1 flex flex-col gap-5 w-[290px]">
           {/* Card 1 */}
           <div className="bg-white border border-[#F0E6F7] w-[] rounded-[10px] p-[14px] flex flex-col gap-2">
             <h3 className="font-poppins font-bold text-[14px] leading-[21px] text-center text-black">

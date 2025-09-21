@@ -8,7 +8,7 @@ import {
 
 const ValuesSection = () => {
   return (
-    <section className="bg-[#6500AC] py-12 px-6">
+    <section className="relative z-20 bg-[#6500AC] py-12 px-6">
       {/* Section Header */}
       <div className="max-w-md mx-auto text-center mb-10">
         <h2 className="text-white font-bold text-lg">Our core Values</h2>
