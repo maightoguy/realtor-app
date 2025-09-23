@@ -5,7 +5,6 @@ const Footer: React.FC = () => {
     <footer className="bg-white border-t border-gray-100 shadow-[0_-4px_25px_rgba(0,0,0,0.1)] flex flex-col items-center px-6 py-10 gap-10">
       {/* Logo */}
       <div className="flex items-center gap-2">
-        {/* Replace with your actual SVG logo */}
         <img
           src="src/assets/Veriplot Primary logo 2.svg"
           width={204.8}
