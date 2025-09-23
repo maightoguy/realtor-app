@@ -28,22 +28,33 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="bg-[#F0E6F7] px-6 py-12 flex flex-col gap-10">
+    <section className="bg-[#F0E6F7] px-6 py-16 flex flex-col gap-12 md:px-20 lg:px-32">
       {/* Heading */}
       <div className="flex flex-col items-center gap-3 text-center">
-        <h2 className="text-lg font-bold text-black">Our customer reviews</h2>
-        <p className="text-sm text-gray-500 leading-6">
+        <h2 className="text-2xl md:text-3xl font-bold text-black">
+          Our customer reviews
+        </h2>
+        <p className="text-sm md:text-base text-gray-600 max-w-xl">
           See what designers and developers are saying about their experience
           with Palm UI.
         </p>
       </div>
 
-      {/* Cards */}
-      <div className="flex gap-5 overflow-x-auto snap-x snap-mandatory pb-4">
+      {/* Cards: always horizontal scroll */}
+      <div
+        className="
+          flex gap-6 overflow-x-auto snap-x snap-mandatory pb-4
+          scrollbar-hide
+        "
+      >
         {testimonials.map((t, i) => (
           <div
             key={i}
-            className="bg-white rounded-2xl p-6 flex flex-col justify-between min-w-[300px] max-w-xs snap-start gap-25"
+            className="
+              bg-white rounded-2xl p-6 flex flex-col justify-between
+              min-w-[300px] max-w-[320px] snap-start
+              flex-shrink-0
+            "
           >
             <p className="text-gray-600 text-base leading-6">{t.text}</p>
             <div className="flex items-center gap-3 mt-6">
@@ -60,5 +71,4 @@ const Testimonials = () => {
     </section>
   );
 };
-
 export default Testimonials;
