@@ -75,6 +75,13 @@ export default function Services() {
           </div>
         </div>
       </div>
+      <div className="flex items-center gap-2">
+        <img
+          src="src/assets/Veriplot Primary logo 2.svg"
+          alt="Veriplot logo"
+          className="hidden md:block h-8 w-auto mb-19 absolute bottom-0 left-1/2 -translate-x-1/2 "
+        />
+      </div>
     </section>
   );
 }

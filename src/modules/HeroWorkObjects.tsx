@@ -6,7 +6,7 @@ const VeriplotSvg = () => {
       viewBox="0 0 148 37"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="mx-auto md:mx-0"
+      className="mx-auto"
     >
       <g clip-path="url(#clip0_19361_2627)">
         <path

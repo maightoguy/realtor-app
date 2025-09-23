@@ -15,13 +15,15 @@ export default function Hero() {
         {/* Heading with inline SVG */}
         <h1
           className="
-            flex flex-col md:flex-row md:items-center md:justify-center
-            gap-2 text-white font-poppins font-bold
-            text-[18px] md:text-[30px] leading-tight md:leading-[45px]
-            max-w-[325px] md:max-w-[769px]
-          "
+    flex flex-col md:flex-row md:items-center md:justify-center
+    gap-2 text-white font-poppins font-bold
+    text-[18px] md:text-[29px] leading-tight md:leading-[45px]
+    max-w-[325px] md:max-w-[769px]
+  "
         >
-          Unlock Wealth Through Real Estate with
+          <span className="flex items-center gap-2">
+            Unlock Wealth Through Real Estate with
+          </span>
           <VeriplotSvg />
         </h1>
 
