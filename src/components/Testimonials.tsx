@@ -53,7 +53,7 @@ const Testimonials = () => {
             className="
               bg-white rounded-2xl p-6 flex flex-col justify-between
               min-w-[300px] max-w-[320px] snap-start
-              flex-shrink-0
+              flex-shrink-0 gap-17
             "
           >
             <p className="text-gray-600 text-base leading-6">{t.text}</p>
